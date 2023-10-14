@@ -1,0 +1,21 @@
+package myproject;
+import org.testng.annotations.AfterTest;
+import org.testng.Assert;
+
+public class TC_1 {
+@AfterTest
+
+
+
+		public void testLogin(){
+			WebDriverManager.firefoxdriver().setup();
+			WebDriver driver = new FirefoxDriver();
+			driver.get("https://google.com");
+			Assert.assertEquals(driver.getTitle(), "Google");
+			driver.close();
+			
+
+
+	}
+
+}

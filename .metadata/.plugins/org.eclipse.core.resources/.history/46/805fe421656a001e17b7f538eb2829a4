@@ -1,0 +1,19 @@
+package myproject;
+import org.testng.Assert;
+public class testapp {
+	 @Test
+	 public void testlogin() {
+		 App_myapp = new app();
+		 Assert.assertEquals(0,myapp.user_Login("abc","abc123"))
+	 }
+	 @Test
+	 public void testlogin1() {
+		 App_myapp = new app();
+		 Assert.assertEquals(1,myapp.user_Login("abc","abc123"))
+	 }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+	}
+}
